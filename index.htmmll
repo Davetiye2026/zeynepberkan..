@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zeynep & Berkan Nişan</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+font-family:'Playfair Display',serif;
+background:#f4eee6;
+color:#4b4036;
+overflow-x:hidden;
+}
+
+/* BÖLÜM GENEL */
+section{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:40px 20px;
+position:relative;
+}
+
+/* ÇİÇEK ARKA PLAN DESEN */
+section::before{
+content:"";
+position:absolute;
+inset:0;
+background-image:url('https://www.transparenttextures.com/patterns/flowers.png');
+opacity:0.08;
+z-index:-1;
+}
+
+/* İLK SAYFA */
+.hero{
+background:linear-gradient(#efe7dc,#e5dacb);
+}
+
+.names{
+font-family:'Great Vibes',cursive;
+font-size:70px;
+margin-bottom:20px;
+}
+
+.invite{
+letter-spacing:2px;
+font-size:18px;
+margin-bottom:40px;
+}
+
+/* TARİH SAAT KUTUSU */
+.date-box{
+border:1px solid #cdbfae;
+padding:18px 28px;
+border-radius:40px;
+background:#fff9f3;
+font-size:20px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+/* PASTA EMOJİSİ */
+.cake{
+font-size:38px;
+margin-top:25px;
+}
+
+/* DETAY SAYFASI */
+.details{
+background:#f8f3ec;
+}
+
+.detail-title{
+font-size:28px;
+margin-bottom:25px;
+letter-spacing:1px;
+}
+
+.location-text{
+font-size:20px;
+margin-bottom:25px;
+line-height:1.6;
+}
+
+/* HARİTA */
+.map{
+width:95%;
+max-width:500px;
+height:300px;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* GEÇİŞ OKU */
+.scroll{
+position:absolute;
+bottom:25px;
+font-size:26px;
+opacity:0.7;
+animation:updown 1.5s infinite;
+}
+
+@keyframes updown{
+0%{transform:translateY(0);}
+50%{transform:translateY(8px);}
+100%{transform:translateY(0);}
+}
+
+/* TELEFON UYUM */
+@media(max-width:500px){
+.names{font-size:54px;}
+.date-box{font-size:18px;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- 1. SAYFA -->
+<section class="hero">
+<div class="names">Zeynep & Berkan</div>
+
+<div class="invite">
+BU ÖZEL GÜNÜMÜZDE<br>
+SİZLERİ ARAMIZDA GÖRMEKTEN<br>
+MUTLULUK DUYARIZ
+</div>
+
+<div class="date-box">
+14 ŞUBAT • CUMARTESİ • 13:00
+</div>
+
+<div class="cake">🎂🌸</div>
+
+<div class="scroll">↓</div>
+</section>
+
+<!-- 2. SAYFA -->
+<section class="details">
+
+<div class="detail-title">Nişan Töreni</div>
+
+<div class="location-text">
+<b>Bal Event</b><br>
+Mermeroğlu Cd. No:61 D:5<br>
+Bağlıca – Etimesgut
+</div>
+
+<div class="map">
+<iframe
+src="https://maps.google.com/maps?q=etimesgut%20bal%20event&t=&z=15&ie=UTF8&iwloc=&output=embed"
+width="100%" height="100%" frameborder="0"></iframe>
+</div>
+
+</section>
+
+</body>
+</html>
